@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-1{
+    border:3px solid #1b1b1b ;
+    background-color: white;
+}
+.left-column {
+    padding:20px;
+}
+.right-column1{
+    margin-left: 300px;
+    margin-bottom: 10px;
+
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 10px;
+    position: absolute;
+}
+.guest-header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.guest-header ul li:hover, 
+.visit-ajio:hover, .visit-ajioluxe:hover {
+    text-decoration:underline; 
+    
+}
+
+.guest-header ul {
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-end;
+    width:90%;
+    margin-right: 20px;
+}
+
+.guest-header ul li {
+    padding:5px o 7px;
+    float: left;
+    margin-right:16px;
+    color: #2c4152;
+    letter-spacing: .1em;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.visit-ajio {
+    padding: 5px 10px 7px;
+    background-color: #304050;
+    color: white;
+}
+
+.visit-ajioluxe {
+    padding: 5px 10px 7px;
+    background-color: #000;
+    color: white;
+}
+
+.hover-dropdown:hover .wishlist-dropdown-menu {
+    display: block;
+}
+
+.wishlist {
+    position: relative;
+}
+
+.wishlist-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+.submit {
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 34px;
+    line-height: 34px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    display: inline-block;
+    background-color: rgb(65, 64, 66);
+    border:1px solid rgb(65, 64, 66) ;
+    color: rgb(255, 255, 255);
+}
+
+.submit .sub-store-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+.search-store {
+    width: 220px;
+    height:35px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    padding: 0 20px 0 12px;
+    border:1px solid  rgb(65, 64, 66);
+    height: 34px;
+    font-size: 14px;
+}
+
+.glass{
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    height: 35px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(65, 64, 66);
+    border:1px solid rgb(65, 64, 66) ;
+}
+
+.glass i {
+    padding-left:0;
+}
+
+.wishlist {
+    padding:10px;
+}
+
+.cart {
+    padding:2px;
+}
+
+.bag {
+    border-radius: 45%;
+    padding:5px;
+    background-color:#304050;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index:1;
+}
+#header-2{
+    background-color: rgb(65, 64, 66);
+    height: 100px;
+    width:100%;
+    transition: 0.2s;
+}
+
+
+/* CSS to display dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+}
+
+/* Custom styles to remove borders from list items */
+.list-group-item {
+    border: none; /* Remove the border */
+    border-radius: 0; /* Remove rounded corners, optional */
+}
+
+/* Optional: Add padding or adjust styles as needed */
+.list-group-item {
+    padding: 0.75rem 1.25rem; /* Adjust padding as needed */
+}
+
+/* Optional: Add a subtle hover effect */
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Light background on hover */
+}
+
+.navbar-custom .nav-link:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar-custom .nav-link  {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.dropdown-menu {
+    width: 100%;
+}
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+}
+.list-group-item-action {
+    display: block;
+}
+.dropdown-menu {
+    position: fixed; /* Position relative to the viewport */
+    top: 100%; /* Position below the nav item (adjust as needed) */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 80vw; /* 80% of viewport width */
+    max-width: 1200px; /* Optional: set a max width if needed */
+    z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+}
+
+
+.images img {
+    transition: transform 0.3s ease; /* Add this line */
+}
+
+.images img:hover {
+    transform: scale(1.02);
+}
+.carousel-indicators {
+    color: #304050;
+}
+
+.carousel-inner img{
+    transition: transform 0.5s ease;
+}
+.carousel-inner img:hover{
+    transform: scale(1.03); /* Scale image on hover */
+   
+}
+.imgs {
+    padding: 0;
+    margin: 0;
+}
+.imgs2 {
+    padding: 0;
+    margin: 2px;
+}
+.custom-img,.custom-img2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.col-custom {
+    padding: 0;
+    border-right: 0.03px solid rgb(60, 58, 58);
+    border-bottom: 1px solid rgb(248, 246, 246);
+}
+
+.custom-img:hover{
+    transform: scale(1.001);
+}
+.col-custom2{
+    background-color: #000;
+}
+.custom-img2:hover{
+    transform: scale(1.01);
+}
+.card {
+    border: none; /* Remove the border around the card */
+    box-shadow: none; /* Remove any shadow for a cleaner look */
+}
+.card-img-top {
+    width: 100px; 
+    height: 100px; 
+    display: block;
+    padding-left:50px;
+}
+.card-body {
+    text-align:left;
+}
+.card-title {
+    margin: 0;  
+    font-size: small;
+}
+.quality {
+    margin-left: 200px;
+}
+.footer-custom {
+    background-color: #2b3e50;
+    padding-left: 150px; /* Adjust the padding to push the footer content to the right */
+}
+
+.footer-custom h6 {
+    color: #fff;
+}
+
+.footer-custom ul.nav .nav-link {
+    color: #ffffff;
+    font-size:12px;
+    margin-bottom:8px;
+}
+.footer-custom .nav-link:hover {
+    text-decoration: underline;
+}
+.borderline {
+    border-top: 2px solid #ccc; /* Adjust color and thickness as needed */
+    margin: 20px 0; 
+    width:93%;
+}
+.gotop {
+    position: absolute;
+    right: 2px;
+    bottom: 10px;
+    z-index: 1;
+    position: fixed;
+}
