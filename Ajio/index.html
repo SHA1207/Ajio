@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="test.css">
+    <title>Bootstrap Grid Example</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 left-column mt-3">
+                        <a href="https://assets.ajio.com/static/img/Ajio-Logo.svg">
+                            <img src="https://assets.ajio.com/static/img/Ajio-Logo.svg" width="140px" class="ajio-logo" id="ajioLogo">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row right-column">
+                            <div class="col-12">
+                                <div class="guest-header">
+                                    <ul>
+                                        <li><span id="loginAjio" role="button">Sign In / Join AJIO</span></li>
+                                        <li><a href="https://www.ajio.com/selfcare">Customer Care</a></li>
+                                        <li><a href="https://www.ajio.com"><button class="visit-ajio">Visit AJIO</button></a></li>
+                                        <li><a href="https://luxe.ajio.com"><button class="visit-ajioluxe">Visit AJIOLUXE</button></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row right-column1">
+                            <div class="col-12">
+                                <div class="header-right d-flex align-items-center">
+                                    <button type="submit" class="submit"><p class="sub-store-name">TRENDS</p></button>
+                                    <input type="text" class="search-store" placeholder="Search Trends Store" value="">
+                                    <button class="glass"><i class="fa-solid fa-magnifying-glass" style="color: #f5f4f4;"></i></button>
+                                    <div class="wishlist">
+                                        <img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="Wishlist icon">
+                                        <div class="dropdown-menu wishlist-dropdown-menu p-3" aria-labelledby="wishlistDropdown">
+                                            <button type="button" class="btn btn-primary btn-block">Sign In</button>
+                                            <p class="mt-2">To add or view item(s) part of your wishlist</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="https://www.ajio.com/cart"><button class="bag"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Wishlist</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-primary">Sign In</button>
+                        <p>To add or view item(s) part of your wishlist</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header-2">
+            <div class="text-center">
+                <a class="navbar-brand" href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/hc6/h29/12023098966046/trends-logo.png" alt="trends-logo" height="35">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample1" aria-controls="navbarExample1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <ul class="navbar-nav d-flex justify-content-center">
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link" href="#" id="menDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Men
+                            </a>
+                            <div class="dropdown-menu w-100 mt-0" aria-labelledby="menDropdown">
+                                <div class="container">
+                                    <div class="row my-4">
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Top Wear</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Jackets</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Coats</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Shirts</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Trousers</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Pants</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Foot Wear</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Boots</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Causual Wear</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Flipflop</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Normal shoes</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Sports shoes</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Bootom Wear</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Jeans</a>
+                                                <a href="#" class="list-group-item list-group-item-action">pants</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Trousers</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Shots</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Dhoties</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Acessories</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Saepe</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Vel alias</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Sunt doloribus</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cum dolores</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Repeat similar structure for Women, Kids, Brands, and Offers -->
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link" href="#" id="womenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Women
+                            </a>
+                            <div class="dropdown-menu w-100 mt-0" aria-labelledby="womenDropdown">
+                                <div class="container">
+                                    <div class="row my-4">
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Wester wear</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Lorem ipsum</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Dolor sit</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Amet consectetur</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Adipisicing elit</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Acessories</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Explicabo voluptas</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Perspiciatis quo</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Laudantium maiores</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Provident dolor</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Ethnic wear</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Iste quaerato</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Est iure</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Praesentium</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Laboriosam</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="list-group list-group-flush">
+                                                <p class="fw-bold ps-3">Acessories</p>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Saepe</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Vel alias</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Sunt doloribus</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cum dolores</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link" href="#" id="kidsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kids
+                            </a>
+                            <div class="dropdown-menu w-100 mt-0" aria-labelledby="kidsDropdown">
+                                <div class="container">
+                                    <div class="row my-4">
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Lorem ipsum</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Dolor sit</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Amet consectetur</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Adipisicing elit</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Explicabo voluptas</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Perspiciatis quo</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Laudantium maiores</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Provident dolor</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Iste quaerato</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Est iure</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Praesentium</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Laboriosam</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Saepe</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Vel alias</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Sunt doloribus</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cum dolores</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link" href="#" id="brandsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Brands
+                            </a>
+                            <div class="dropdown-menu w-100 mt-0" aria-labelledby="brandsDropdown">
+                                <div class="container">
+                                    <div class="row my-4">
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Lorem ipsum</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Dolor sit</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Amet consectetur</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Adipisicing elit</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Explicabo voluptas</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Perspiciatis quo</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Laudantium maiores</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Provident dolor</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Iste quaerato</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Est iure</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Praesentium</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Laboriosam</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Saepe</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Vel alias</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Sunt doloribus</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Cum dolores</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link" href="#" id="offersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Offers
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"></ul>
+                </div>
+            </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="images">
+    <img src="https://assets.ajio.com/cms/TRENDS/WEB/M-19072024-TrendsSIS-fallwinter24strip.jpg" class="img-fluid" alt="image" width="100%" id="image1">
+    <img src="https://assets.ajio.com/cms/TRENDS/WEB/M-19072024-TrendsSIS-poweredbynetplay.jpg" class="img-fluid" alt="image" width="100%">
+    <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-header.jpg" class="img-fluid" alt="image" width="100%">
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-shadesofearth.jpg" class="d-block w-100" alt="carousel1"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-autumn24.jpg" class="d-block w-100" alt="carousel2"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-vibranthues.jpg" class="d-block w-100" alt="carousel3"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-vibranthues.jpg" class="d-block w-100" alt="carousel4"></a>
+          </div>
+        </div>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3" aria-label="Slide 4"></button>  
+    </div>
+</div>
+    
+    <div class="images">
+        <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-Header.jpg" class="img-fluid" alt="image" width="100%">
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-comfyfashionmen.jpg" class="d-block w-100" alt="carousel1"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-fusionchic.jpg" class="d-block w-100" alt="carousel2"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-utilityvogue.jpg" class="d-block w-100" alt="carousel3"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-kidswear-starting149.jpg" class="d-block w-100" alt="carousel4"></a>
+          </div>
+        </div>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3" aria-label="Slide 4"></button>  
+    </div>
+</div>
+<div class="images">
+    <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-Header.jpg" class="img-fluid" alt="image" width="100%">    
+</div>
+<div class="container-fluid imgs">
+    <div class="row no-gutters">
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-avaasa-starting299.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-netplay-starting399.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-dnmx-starting399.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-johnplayers-starting599.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-leecooper-starting399.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-teamspirit-starting499.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-fig-starting399.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-rio-starting199.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-fusion-starting499.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-performax-starting299.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-frndz-starting299.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-riogirl-starting199.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-dnmx-starting299.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-siyahi-starting499.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-pointcove-starting299.jpg" alt=""></a>
+        </div>
+        <div class="col-md-3 col-custom">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-revverse-starting699.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+<div class="images">
+    <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-header.jpg" class="img-fluid" alt="image" width="100%">    
+</div>
+<div class="container-fluid imgs2">
+    <div class="row no-gutters">
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-kurtas&kurtis-starting499.jpg" alt=""></a>
+        </div>
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-tshirts-starting199.jpg" alt=""></a>
+        </div>
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-jeans-starting799.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-dresses-starting499.jpg" alt=""></a>
+        </div>
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-trousers-starting699.jpg" alt=""></a>
+        </div>
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-shirts-starting599.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-kurtas&kurtis-starting499.jpg" alt=""></a>
+        </div>
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img2" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-tshirts-starting199.jpg" alt=""></a>
+        </div>
+        <div class="col col-custom2">
+            <a href="#"><img class="custom-img" src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-newdrops-under599.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+<div class="images">
+    <img src="https://assets.ajio.com/cms/TRENDS/WEB/08032022-D-unisex-ajiocares-strip11.jpg" class="img-fluid" alt="image" width="100%">    
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="ftr-1">
+        <div class="container quality">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="data:image/png;base64,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" class="card-img-top" alt="EASY EXCHANGE">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span aria-label="EASY EXCHANGE"><strong>EASY EXCHANGE</strong></span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://logowik.com/content/uploads/images/329_handheart.jpg" class="card-img-top" alt="100% HANDPICKED">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span aria-label="100% HANDPICKED"><strong>100% HANDPICKED</strong></span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/034/104/032/small_2x/quality-guarantee-icon-check-mark-in-seal-icon-vector.jpg" width="10px" class="card-img-top" alt="ASSURED QUALITY">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span aria-label="ASSURED QUALITY"><strong>ASSURED QUALITY</strong></span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-custom py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h6>Ajio</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Who We Are</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Join Our Team</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Terms & Conditions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">We Respect Your Privacy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Fees & Payments</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Return & Refund Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Promotions Terms & Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3 mb-3">
+                    <h6>Help</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Track Your Order</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Returns</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Cancellations</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Payments</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Customer Service</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">How Do I Redeem My Coupon?</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3 mb-3">
+                    <h6>Shop by</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Men</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Women</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Kids</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Indie</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Stores</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">New Arrivals</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Brand Directory</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Collections</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3 mb-3">
+                    <h6>Follow us</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Instagram</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Twitter</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid borderline"></div>
+            <div class="d-flex flex-sm-row justify-content-between" style="width: 85%;">
+                <p class="text-light">Payment Methods</p>
+                <p class="text-light">Security Systems</p>
+            </div>
+            <div class="d-flex flex-sm-row justify-content-between" style="width: 85%;">
+            <div class="d-block d-flex flex-column flex-sm-row justify-content-start custom-margin">
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3Q1LUhRVmw8ZboiL5TbM78WPUlF9WB9GXA&s" width="50px"></li>
+                    <li class="ms-3"><img src="mastercard-logo-png-transparent.png" width="50px"></li>
+                    <li class="ms-3"><img src="pngaaa.com-1085067.png" width="50px"></li>
+                </ul>
+            </div>
+            <img src="data:image/png;base64,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"width="70px">
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="gotop">
+    <img src="angle-circle-up-icon.svg" width="50px" alt="Go to top">
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+   window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const header2 = document.getElementById("header-2");
+    const logo = document.querySelector(".navbar-brand img"); // Update to target the logo
+    const navLinks = document.querySelectorAll("#navbarExample1 .nav-link"); // Targeting all nav links in the dropdowns
+
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
+        header2.style.height = "75px";
+        logo.style.height = "25px"; // Updated to maintain proportionality
+        navLinks.forEach(link => link.style.fontSize = "12px");
+    } else {
+        header2.style.height = "100px";
+        logo.style.height = "35px"; // Original height
+        navLinks.forEach(link => link.style.fontSize = "16px");
+    }
+}
+
+</script>
+        
+
+</body>
+</html>
+        
